@@ -16,7 +16,7 @@ int main (int argc, char *argv[])
 			j++;
 		
 		if (j == 10)
-			continue;
+			break;
 	}
 	
 	return 0;
