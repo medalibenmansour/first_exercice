@@ -22,10 +22,12 @@ int is_prime(int number)
     {
         if (flag == 0)
         {  
+			printf("%d is a prime number.", number);
 			return 0;
 		}
         else
         {
+			printf("%d is not a prime number.", number);
 			return -1;
 		}
     }
@@ -38,6 +40,7 @@ int factorial(int number){
     // show error if the user enters a negative integer
     if (number < 0)
     {
+		printf("Error! Factorial of a negative number doesn't exist.");
 		return -1;
 	}
 
@@ -47,7 +50,7 @@ int factorial(int number){
         {
             factorial *= i;              // factorial = factorial*i;
         }
-        
+        printf("Factorial of %d = %llu", number, factorial);
     }
 
     return factorial;
