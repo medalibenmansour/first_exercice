@@ -22,12 +22,11 @@ int is_prime(int number)
     {
         if (flag == 0)
         {  
-			printf("%d is a prime number.", number);
+			printf("%d is a prime number.\n", number);
 			return 0;
 		}
         else
         {
-			printf("%d is not a prime number.", number);
 			return -1;
 		}
     }
@@ -50,7 +49,7 @@ int factorial(int number){
         {
             factorial *= i;              // factorial = factorial*i;
         }
-        printf("Factorial of %d = %llu", number, factorial);
+        printf("Factorial of %d = %llu\n", number, factorial);
     }
 
     return factorial;
